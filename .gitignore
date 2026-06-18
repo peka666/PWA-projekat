@@ -1,30 +1,187 @@
+# Composer dependencies
 /vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+# Node dependencies
+/node_modules/
+/npm-debug.log
+/npm-error.log
+/yarn-error.log
+/package-lock.json
+/yarn.lock
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
+# Compiled assets
+/public/css/
+/public/js/
+/public/mix-manifest.json
+/public/build/
+/public/hot
+/public/storage
 
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
+# Environment files
 .env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
+.env.*
+!.env.example
+!.env.testing
 
-/public/build
-/storage/pail
-.env.backup
-.env.production
-.phpactor.json
-auth.json
+# IDE and editor files
+/.idea/
+/.vscode/
+/*.iml
+/.project
+/.settings/
+/.vagrant/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Laravel specific
+/storage/*.key
+/storage/clockwork/
+/storage/debugbar/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/testing/
+/storage/framework/views/
+/storage/logs/laravel.log
+/storage/logs/*.log
+
+# Bootstrap cache
+/bootstrap/cache/*.php
+/bootstrap/cache/packages.php
+/bootstrap/cache/services.php
+/bootstrap/cache/routes-v7.php
+
+# PHPUnit
+/.phpunit.result.cache
+/phpunit.xml
+
+# Code coverage
+/coverage/
+/clover.xml
+/.coverage
+
+# Database
+/*.sqlite
+/*.sqlite-journal
+/database/*.sqlite
+/database/*.sqlite-journal
+
+# Backup files
+/*.backup
+/*.old
+/*.orig
+/*.rej
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+.gitmodules
+
+# Laravel Sail
+/docker-compose.override.yml
+
+# PHP CS Fixer
+.php-cs-fixer.cache
+
+# PHPStan
+/phpstan.neon
+/phpstan.neon.dist
+
+# Deployment files
+/.env.production
+/.env.staging
+/.env.local
+
+# Temporary files
+/tmp/
+/temp/
+/*.tmp
+/*.temp
+
+# Logs
+/*.log
+/storage/logs/*
+
+# Package manager files
+/composer.lock
+/.composer/
+
+# Laravel Telescope
+/storage/telescope/
+
+# Laravel Horizon
+/storage/horizon/
+
+# Debug Bar
+/_debugbar/
+
+# Ignore IDE specific
+/.phpstorm.meta.php
+/_ide_helper.php
+/_ide_helper_models.php
+
+# SASS/SCSS cache
+/.sass-cache
+/*.css.map
+
+# Webpack
+/webpack.config.js
+/webpack.mix.js
+/webpack.mix.js.map
+
+# Laravel Excel
+/storage/framework/cache/data/
+
+# Laravel Nova
+/storage/nova/
+
+# Meilisearch
+/.storage/
+
+# PHPUnit cache
+/.phpunit.result.cache
+
+# Tinker
+/.tinker/
+
+# Editor directories and files
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+.idea/
+.vscode/
+.history/
+
+# Docker
+/docker-compose.override.yml
+/.docker/
+
+# GitHub Actions
+/.github/
+
+# Sentry
+/.sentryclirc
+
+# Env file for local development
+/.env.local
+/.env.development
+/.env.test
+/.env.production
+
+# IDE workspace files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
