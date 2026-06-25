@@ -49,7 +49,7 @@ class EditorController extends Controller
             "opis" => ['required', 'min:10'],
             "cena" => ['required', 'numeric', 'min:100'],
             'slika' => ['nullable', 'image', 'mimes:jpeg,png,jpg,gif', 'max:2048'], 
-            "izdvojeno" => ['required', 'in:izdvojeno,Ne'], // Added 'in' rule
+            "izdvojeno" => ['required', 'in:izdvojeno,Ne'], 
         ]);
 
         $proizvod = Proizvod::findOrFail($request->id);
