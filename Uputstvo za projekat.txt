@@ -1,0 +1,17 @@
+Komanda u gitu:
+
+git clone --branch master --single-branch https://github.com/peka666/PWA-projekat.git 
+
+Da Proradi aplikacija:
+
+composer install
+copy .env.example .env
+php artisan key:generate
+
+Storage za slike:
+
+rmdir public\storage
+php artisan storage:link
+
+
+	
